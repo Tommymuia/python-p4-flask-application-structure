@@ -12,11 +12,11 @@ def index():
 # append to server/app.py
 @app.route('/<username>')
 def user(username):
-    return f'<h1>Profile picture for {username}<h1>'
+    return f'<h1>Profile picture for {username}</h1>'
 
 # modify user() in server/app.py
 @app.route('/<string:username>')
-def user(username):
+def user_list(username):
     return f'Profile picture for {username}'
 
 if __name__ =='__main__':
